@@ -12,6 +12,12 @@ body {
     background-color: #f4f4f4;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Navigation */
 nav {
     background-color: #2c3e50;
@@ -87,10 +93,4 @@ footer {
 /* Utility Classes */
 .text-center {
     text-align: center;
-}
-
-.construction-img {
-    width: 40%;
-    display: block;
-    margin: 1rem auto;
 }
