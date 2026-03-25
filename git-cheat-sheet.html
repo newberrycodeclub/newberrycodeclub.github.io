@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connor's Cool AF Git Cheat Sheet</title>
+        <style>
+            td {
+                padding: 5px;
+            }
+            img {
+                width: 30px;
+            }
+            .cli {
+                background-color: black;
+                color: white;
+                font-family: 'Courier New', monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="resources.html"><-Back</a>
+        <br>
+        <h1>Connor's Cool AF Git Cheat Sheet <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Femoji-transparent-thumbs-up-3.png&f=1&nofb=1&ipt=4e0da5f9d04fdeb32626857f2d9dde38061d0a486108e2c2026f7f7a06d41ff4"></h1>
+        <hr>
+        <h3>Usefull windows commands</h3>
+        <table border=2>
+            <tr>
+                <th>Command</th>
+                <th>Syntax</th>
+                <th>Function</th>
+            </tr>
+            <tr>
+                <td class="cli">mkdir [NAME]</td>
+                <td>[NAME]: Name of a folder in "quotations"</td>
+                <td>Creates a new folder called [NAME]</td>
+            </tr>
+            <tr>
+                <td class="cli">cd [NAME]</td>
+                <td>[NAME]: Name of a folder in "quotations"</td>
+                <td>Changes directory (moves into) folder called [NAME]</td>
+            </tr>
+            <tr>
+                <td class="cli">dir</td>
+                <td>/b : optional parameter, use for simpler display</td>
+                <td>Displays all the files and directories in your current directory</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>One-time setup for Git</h3>
+        <p>Make sure you make a <a href="github.com">GitHub</a> account first!</p>
+        <table border=2>
+            <tr>
+                <th>Command</th>
+                <th>Syntax</th>
+                <th>Function</th>
+            </tr>
+            <tr>
+                <td class="cli">winget install --id Git.Git -e --source winget</td>
+                <td>none</td>
+                <td>Installs Git on windows. Visit <a href="https://git-scm.com/install/">Git's website</a> for other OS's</td>
+            </tr>
+            <tr>
+                <td class="cli">git config --global user.name [USER]</td>
+                <td>[USER] : Your <a href="github.com">GitHub</a> username</td>
+                <td>Tells Git you're allowed to push and pull from a repo</td>
+            </tr>
+            <tr>
+                <td class="cli">git config --global user.email [EMAIL]</td>
+                <td>[EMAIL] : Your <a href="github.com">GitHub</a> email</td>
+                <td>Tells git you're allowed to push and pull from a repo (Again)</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Working with a repository (repo)</h3>
+        <table border=2>
+            <tr>
+                <th>Command</th>
+                <th>Syntax</th>
+                <th>Function</th>
+            </tr>
+            <tr>
+                <td class="cli">git clone [URL]</td>
+                <td>[URL] : A <a href="github.com">GitHub</a> repo link</td>
+                <td>Clones [URL] to the current directory</td>
+            </tr>
+            <tr>
+                <td class="cli">git pull</td>
+                <td>none</td>
+                <td>Pulls the latest updates from the <em>main</em> branch</td>
+            </tr>
+            <tr>
+                <td class="cli">git pull origin [NAME]</td>
+                <td>[NAME] : Name of a branch in the repo</td>
+                <td>Pulls the latest updates from the named branch</td>
+            </tr>
+            <tr>
+                <td class="cli">git branch [NAME]</td>
+                <td>[NAME] : Name of a branch</td>
+                <td>Makes a new branch with a name. Branch will go to <a href="github.com">GitHub</a> on push</td>
+            </tr>
+            <tr>
+                <td class="cli">git checkout [NAME]</td>
+                <td>[NAME] : Name of a branch</td>
+                <td>Changes working branch to the named branch</td>
+            </tr>
+            <tr>
+                <td class="cli">git branch</td>
+                <td>none</td>
+                <td>Lists the local branches</td>
+            </tr>
+            <tr>
+                <td class="cli">git push origin --delete [NAME]</td>
+                <td>[NAME] : The name of a branch</td>
+                <td>Deletes the named branch</td>
+            </tr>
+            <tr>
+                <td class="cli">git add .</td>
+                <td>none</td>
+                <td>Tells Git which files you have changed</td>
+            </tr>
+            <tr>
+                <td class="cli">git status</td>
+                <td>none</td>
+                <td>Tells you which files you told Git you have changed</td>
+            </tr>
+            <tr>
+                <td class="cli">git commit -m [MESSAGE]</td>
+                <td>[MESSAGE] : A short message to others saying what you changed</td>
+                <td>Commits latest changes to Git</td>
+            </tr>
+            <tr>
+                <td class="cli">git push</td>
+                <td>none</td>
+                <td>Pushes latest commit to <a href="github.com">GitHub</a></td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Ideal Git Workflow</h3>
+        <ol>
+            <li>git pull</li>
+            <li>git branch [YOUR NAME/PROJECT]</li>
+            <li>git checkout [BRANCH FROM 2]</li>
+            <li>Make changes</li>
+            <li>git commit to your branch regularly</li>
+            <li>git pull from your branch regularly</li>
+            <li>When your done, submit a pull request in <a href="github.com">GitHub</a></li>
+            <li>Delete your branch</li>
+        </ol>
+        <h3>Communicate with your team!</h3>
+        <hr>
+        <a href="resources.html"><-Back</a>
+    </body>
+</html>
